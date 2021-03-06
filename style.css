@@ -21,6 +21,8 @@ header {
 .perfilPicture {
     display: flex;
     justify-content: center;
+
+    animation: perfilIn 0.86s ease ;
 }
 
 .perfilPicture img {
@@ -36,6 +38,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .linkInput {
@@ -51,6 +54,8 @@ header {
 
     border: 2px #1e181f93 solid;
     border-radius: 18px;
+
+    animation: perfilIn 1.01s ease-out ;
 }
 
 .linkInput a {
@@ -66,4 +71,18 @@ header {
     margin-top: 2rem;
     text-align: center;
     font-family: 'Playfair Display', serif;
+
+    animation: perfilIn 1s ease ;
+}
+
+/*Animações ==================================================================*/
+
+@keyframes perfilIn {
+    from {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+    }
 }
