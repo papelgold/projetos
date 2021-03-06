@@ -52,10 +52,17 @@ header {
     flex-direction: column;
     justify-content: center;
 
-    border: 2px #1e181f93 solid;
+    background: linear-gradient(to right, #F27405,  #F28705) ;
+
     border-radius: 18px;
+    box-shadow: 2px 3px 5px rgba(156, 129, 56, 0.35);
 
     animation: perfilIn 1.01s ease-out ;
+}
+
+.linkInput:hover {
+    opacity: 0.8;
+
 }
 
 .linkInput a {
@@ -63,7 +70,7 @@ header {
 }
 
 .linkInput p {
-    color: #1E181F;
+    color: #000;
 }
 
 .footer {
